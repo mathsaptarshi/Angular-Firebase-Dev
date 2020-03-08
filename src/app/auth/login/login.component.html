@@ -1,0 +1,18 @@
+<button 
+  *ngIf="!user"
+  mat-raised-button color="primary"
+  (click)="loginGoogle()">
+  Login with Google
+</button>
+<button 
+  *ngIf="!user"
+  mat-raised-button color="primary"
+  (click)="loginFacebook()">
+  Login with Facebook
+</button>
+<button 
+  *ngIf="!!user"
+  mat-raised-button color="primary"
+  (click)="logout()">
+  Logout
+</button>
